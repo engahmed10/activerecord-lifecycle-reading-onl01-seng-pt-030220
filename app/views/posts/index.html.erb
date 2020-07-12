@@ -1,6 +1,4 @@
-<% if @posts.count cd== 0 %>
-  <p>No posts yet! <%= link_to 'Create one!', new_post_url %></p>
-<% enddc %>
+
 <% @posts.each do |post| %>
   <div><%= post.title %></div>
 <% end %>
